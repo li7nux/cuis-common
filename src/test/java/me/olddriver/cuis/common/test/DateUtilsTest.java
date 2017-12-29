@@ -56,9 +56,9 @@ public class DateUtilsTest {
     }
 
     @Test
-    public void t(){
-        DateUtils.formatDate(new Date(), DateUtils.sf);
-        DateUtils.parseDate("20171229", DateUtils.df);
+    public void diffDaysTest(){
+        Date date = DateUtils.createDate(2017, 12, 20, 15, 30, 0);
+        Assert.assertEquals(DateUtils.diffDays(date, new Date()), 9);
     }
 
 }
