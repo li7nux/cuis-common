@@ -1,0 +1,50 @@
+= Cuis Common — Java 常用工具类合集
+Li7nux
+v1.0.0,2017-12-29
+:doctype: book
+:encoding: utf-8
+:lang: zh-CN
+:toc: left
+:toclevels: 4
+:numbered:
+
+=== 功能列表
+
+. 时间操作(https://github.com/li7nux/cuis-common/blob/master/src/main/java/me/olddriver/cuis/common/DateUtils.java[`DateUtils`])
+
+=== 如何使用
+
+icon:tags[role="red"] **添加依赖**
+
+[source, shell]
+----
+# 克隆项目本地安装
+git https://github.com/li7nux/cuis-common.git
+cd cuis-common
+mvn clean install
+
+# 在项目中引用
+# maven
+<dependency>
+    <groupId>me.olddriver.cuis</groupId>
+    <artifactId>common</artifactId>
+    <version>1.0-SNAPSHOT</version>
+</dependency>
+# gradle
+compile 'me.olddriver.cuis:common:1.0-SNAPSHOT'
+----
+
+==== 常用的时间操作(https://github.com/li7nux/cuis-common/blob/master/src/main/java/me/olddriver/cuis/common/DateUtils.java[`DateUtils`])
+
+
+[source, java]
+----
+// 按指定格式进行时间格式化
+DateUtils.formatDate(new Date(), DateUtils.sf);
+// 按固定格式将字符串解析成时间
+DateUtils.parseDate("20171229", DateUtils.df);
+----
+
+TIP: 更多例子查看 https://github.com/li7nux/cuis-common/blob/master/src/test/java/me/olddriver/cuis/common/test/DateUtilsTest.java[`DateUtilsTest`]
+
+
