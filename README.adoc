@@ -47,4 +47,14 @@ DateUtils.parseDate("20171229", DateUtils.df);
 
 TIP: 更多例子查看 https://github.com/li7nux/cuis-common/blob/master/src/test/java/me/olddriver/cuis/common/test/DateUtilsTest.java[`DateUtilsTest`]
 
+==== MD5加密工具类(https://github.com/li7nux/cuis-common/blob/master/src/main/java/me/olddriver/cuis/common/MD5Util.java[`MD5Util`])
+
+
+[source, java]
+----
+MD5Util.encrypt("12345");
+----
+
+TIP: 更多例子查看 https://github.com/li7nux/cuis-common/blob/master/src/test/java/me/olddriver/cuis/common/test/MD5UtilTest.java[`MD5UtilTest`]
+
 
