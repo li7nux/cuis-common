@@ -47,7 +47,7 @@ DateUtils.parseDate("20171229", DateUtils.df);
 
 TIP: 更多例子查看 https://github.com/li7nux/cuis-common/blob/master/src/test/java/me/olddriver/cuis/common/test/DateUtilsTest.java[`DateUtilsTest`]
 
-==== MD5加密工具类(https://github.com/li7nux/cuis-common/blob/master/src/main/java/me/olddriver/cuis/common/MD5Util.java[`MD5Util`])
+==== MD5 加密工具类(https://github.com/li7nux/cuis-common/blob/master/src/main/java/me/olddriver/cuis/common/MD5Util.java[`MD5Util`])
 
 
 [source, java]
@@ -58,7 +58,7 @@ MD5Util.encrypt("12345");
 TIP: 更多例子查看 https://github.com/li7nux/cuis-common/blob/master/src/test/java/me/olddriver/cuis/common/test/MD5UtilTest.java[`MD5UtilTest`]
 
 
-==== Json工具类(基于Jackson)(https://github.com/li7nux/cuis-common/blob/master/src/main/java/me/olddriver/cuis/common/JsonUtils.java[`JsonUtils`])
+==== Json 工具类(基于Jackson)(https://github.com/li7nux/cuis-common/blob/master/src/main/java/me/olddriver/cuis/common/JsonUtils.java[`JsonUtils`])
 
 
 [source, java]
@@ -69,3 +69,13 @@ JsonUtils.toJsonString(vo);
 
 TIP: 更多例子查看 https://github.com/li7nux/cuis-common/blob/master/src/test/java/me/olddriver/cuis/common/test/JsonUtilsTest.java[`JsonUtilsTest`]
 
+==== 数字处理工具类(https://github.com/li7nux/cuis-common/blob/master/src/main/java/me/olddriver/cuis/common/NumberFormatUtils.java[`NumberFormatUtils`])
+
+
+[source, java]
+----
+// 保留 2 位小数，不够补0
+NumberFormatUtils.formatDecimalWithZero(new BigDecimal(35.8), 2);
+----
+
+TIP: 更多例子查看 https://github.com/li7nux/cuis-common/blob/master/src/test/java/me/olddriver/cuis/common/test/NumberFormatUtilsTest.java[`NumberFormatUtilsTest`]
